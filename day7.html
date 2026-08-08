@@ -2,23 +2,49 @@
 <hmtl>
     <head>
         <title>Day 7</title>
+        <link rel="stylesheet" type="text/css" href="day1.css">
+        <style>
+            main {
+                background-color: blue;
+            }#1{
+                background-color: green;
+            } 
+            .c2
+            {
+                background-color: orange;
+            } main p{
+                background-color: pink;
+            } section p{
+                background-color: honeydew; /* contextual apply for all the things but the descent only applies for the direct child */
+            }p+cite{
+                background-color: brown;
+            }li:hover{
+
+                color: red;
+            }li::after{
+                content: "This is a list item";
+            }
+        </style>
     </head>
     <body>
         <main>
-            <h1>Day 7</h1>
+            <p>Day 7</p>
+            <h1 style="background-color: red;">Day 7</h1>
+            <p>This is contextual information.</p>
         </main>
         <section>
+            <div><p>this is descendent paragaph</p></div>
             <p>This is the section</p>
             <p>this is a section and this a second paragraph</p>
         </section>
         <article>
-            <p>Article Title</p>
+            <p id="1">Article Title</p>
             <p><b>This is an article.</b></p>
             <mark>This is a marked text</mark>
         </article>
         <aside>
             <p>This is an aside.</p>
-            <p><i>This is another paragraph in the aside.</i></p>
+            <p class="c2"><i>This is another paragraph in the aside.</i></p>
             <p><sub>This is a subscript.</sub><super>This is a superscript.</super></p>
         </aside>
         <aside>
@@ -27,7 +53,7 @@
             </ul>
         </aside>
         <article>
-            <p><del>This is second article.<del></p>
+            <p class="c2"><del>This is second article.<del></p>
                 <p><ins>This is second article</ins></p>
         </article>
         <abbr title="This is a html">HTML</abbr>
