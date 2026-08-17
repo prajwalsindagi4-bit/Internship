@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Box Model</title>
+        <style>
+            p{
+                width: 200px;
+                height: 200px;
+                border: 10px solid white;
+                padding: 40px 50px 20px;
+                margin: 30px;
+                box-sizing: border-box;
+                border-color: red;
+                border-style: dotted;
+                border-width: 5px;
+                overflow: auto;
+                border-radius: 20px;
+                box-shadow: 100px 100px 50px 20px grey;
+            }
+            div{
+                width: 200px;
+                height: 200px;
+                border: 10px solid white;
+                padding: 40px 50px 20px;
+                margin: 30px;
+                box-sizing: border-box;
+                border-color: red;
+                border-style: dotted;
+                border-width: 5px;
+                overflow: auto;
+                border-radius: 20px;
+                box-shadow: inset 100px 100px 50px 20px grey;
+                border-image: url('OIP.webp') 30 round;
+                border-image-width: 30px;
+            }
+            div:hover{
+                background-color: red;
+            }
+        </style>
+    </head>
+    <body style="background-color: black;">
+        <p style="color: white;">This is box model</p>
+        <div style="color: white;">this is the second box</div>
+    </body>
+</html>
