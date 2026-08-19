@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Transform</title>
+        <style>
+            .transform-box{
+                width: 100px;
+                height: 100px;
+                background-color: black;
+                margin: 20px;
+                transition: transform 3s, background-color 2s cubic-bezier(0.68, -0.55, 0.27, 1.55);    
+            }
+            .change:hover{
+                transform: translate(50px, 50px);
+                background-color: rgb(255, 0, 242);
+            }
+            .rotate:hover{
+                transform: rotate(45deg);
+                background-color: lightgreen;
+            }
+
+            .scale:hover{
+                transform: scale(1.5);
+                background-color: red
+            }
+
+            .skew:hover{
+                transform: skew(20deg, 20deg);
+                background-color: rgb(3, 209, 9);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="transform-box change"></div>
+        <div class="transform-box rotate"></div>
+        <div class="transform-box scale"></div>
+        <div class="transform-box skew"></div>
+    </body>
+</html>
